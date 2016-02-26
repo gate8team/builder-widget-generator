@@ -1,0 +1,14 @@
+<div class="button-widget-editor">
+    <h3 class="email-builder_sidebar_title">[WIDGET_NAME_CAMEL_CASE] Widget Settings</h3>
+    <div class="email-builder_sidebar_image-editor">
+        <div>
+            {{ builderEditor.state.instance.message }}
+        </div>
+        <hr/>
+        <div>
+            <a href=""
+               ng-click="builderEditor.state.helper.close({ builder: builderEditor.state.builder, widget: builderEditor.state.instance })"
+               class="btn btn-default">Hide</a>
+        </div>
+    </div>
+</div>
