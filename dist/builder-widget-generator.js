@@ -4,6 +4,7 @@ var BuilderWidgetGenerator = function () {};
 var fse = require('fs-extra');
 var fs = require('fs');
 var replace = require('replace');
+var chalk = require('chalk');
 
 BuilderWidgetGenerator.prototype.generate = function(params) {
     var widgetName = this.toSnakeCase(params.name, true);
@@ -43,7 +44,7 @@ BuilderWidgetGenerator.prototype.copyDefaultStructure = function(params) {
 				widgetName: additionalParams.name
 			});
 
-			console.log('{path} generated successfully...'.replace('{path}', path));
+			console.log(chalk.gray(path) + ' ' + chalk.green('has successfully generated...'));
 		}
 	}
 };

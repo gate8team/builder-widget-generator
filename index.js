@@ -1,4 +1,5 @@
 var BuilderWidgetGenerator = require('./dist/builder-widget-generator.js');
+var chalk = require('chalk')
 
 var Generator = function(params) {
     this.args = {
@@ -24,7 +25,7 @@ Generator.prototype.checkIsValidForStart = function() {
 };
 
 Generator.prototype.printPrompt = function() {
-    console.log('Usage: npm index.js generate widget-name ...');
+    console.log(chalk.red('Usage: node index.js generate widget-name ...'));
 };
 
 Generator.prototype.run = function() {
