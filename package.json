@@ -1,0 +1,15 @@
+{
+  "name": "builder-widget-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^0.26.7",
+    "replace": "^0.3.0"
+  }
+}
