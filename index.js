@@ -32,7 +32,4 @@ Generator.prototype.run = function() {
     (new BuilderWidgetGenerator()).generate({ name: this.args.name });
 };
 
-new Generator({
-    command: process.argv.slice(2, 3)[0],
-    name: process.argv.slice(3)[0]
-});
+module.exports = Generator;

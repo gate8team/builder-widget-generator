@@ -1,16 +1,30 @@
 {
   "name": "builder-widget-generator",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "HA Builder Widget Generator",
   "main": "index.js",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "replace": "^0.3.0",
+    "fs-extra": "^0.26.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gate8team/builder-widget-generator.git"
+  },
+  "author": "anton.shabanov",
   "license": "ISC",
   "dependencies": {
     "chalk": "^1.1.1",
     "fs-extra": "^0.26.7",
     "replace": "^0.3.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/gate8team/builder-widget-generator/issues"
+  },
+  "homepage": "https://github.com/gate8team/builder-widget-generator#readme"
 }
