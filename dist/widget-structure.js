@@ -2,7 +2,7 @@ var WidgetStructure = function() {
     var path = {
         model: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/webpack/assets/javascripts/modules/content-builder/models/widgets/{WIDGET_NAME_CAMEL_CASE}/',
         helper: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/webpack/assets/javascripts/modules/content-builder/models/widgets/{WIDGET_NAME_CAMEL_CASE}/',
-        template: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/webpack/assets/javascripts/modules/content-builder/models/widgets/'
+        template: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/app/assets/templates/ha-dashboard/content-builder/widgets/{WIDGET_NAME}/'
     };
 
     this.templates = {
@@ -52,7 +52,8 @@ var WidgetStructure = function() {
     this.config = {
     	shortcodes: {
     		widget: {
-    			name: '{WIDGET_NAME_CAMEL_CASE}'
+    			name: '{WIDGET_NAME_CAMEL_CASE}',
+                original: '{WIDGET_NAME}'
     		}
     	}
     };

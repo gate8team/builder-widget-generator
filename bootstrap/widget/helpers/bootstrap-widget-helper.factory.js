@@ -1,5 +1,5 @@
 import { Inject } from '../../../../../decorators/main.decorator.js';
-import { BuilderWidgetHelper } from '../../../index.js';
+import { BuilderWidgetHelper } from '../../builder-widget-helper.factory.js';
 
 class {WIDGET_NAME_CAMEL_CASE}WidgetHelper extends BuilderWidgetHelper {
     constructor($log) {

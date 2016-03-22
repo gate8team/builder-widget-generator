@@ -1,12 +1,12 @@
-import { Widget } from '../../../decorators/main.decorator.js';
-import { BuilderWidget } from '../models/builder-widget.class.js';
+import { Widget } from '../../../../../decorators/main.decorator.js';
+import { BuilderWidget } from '../../builder-widget.class.js';
 
 @Widget({
-    name: '{WIDGET_NAME_CAMEL_CASE}',
+    name: '{WIDGET_NAME_CAMEL_CASE}Widget',
     templates: {
-        preview: 'ha-dashboard/content-builder/widgets/shop-invite/preview.html',
-        main: 'ha-dashboard/content-builder/widgets/shop-invite/main.html',
-        editor: 'ha-dashboard/content-builder/widgets/shop-invite/editor.html'
+        preview: 'ha-dashboard/content-builder/widgets/{WIDGET_NAME}/preview.html',
+        main: 'ha-dashboard/content-builder/widgets/{WIDGET_NAME}/main.html',
+        editor: 'ha-dashboard/content-builder/widgets/{WIDGET_NAME}/editor.html'
     },
     helpers: {
         main: '{WIDGET_NAME_CAMEL_CASE}WidgetHelper',

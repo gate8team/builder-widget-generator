@@ -28,7 +28,9 @@ BuilderWidgetGenerator.prototype.copyDefaultStructure = function(params) {
 		if (forStructure.hasOwnProperty(prop)) {
 			var widget = forStructure[prop];
 			var path = [
-					widget.path.output.replace(structure.config.shortcodes.widget.name, additionalParams.original),
+					widget.path.output
+					.replace(structure.config.shortcodes.widget.name, additionalParams.original)
+					.replace(structure.config.shortcodes.widget.original, additionalParams.original),
 					widget.name.replace('bootstrap', additionalParams.original)
 				].join('');
 
@@ -40,6 +42,14 @@ BuilderWidgetGenerator.prototype.copyDefaultStructure = function(params) {
 
 			this.prepareFile({
 				// filePath: [__dirname, '/../', widget.path.output, widget.name.replace('bootstrap', additionalParams.original)].join(''),
+				regexp: structure.config.shortcodes.widget.name,
+				filePath: path,
+				widgetName: additionalParams.name
+			});
+
+			this.prepareFile({
+				// filePath: [__dirname, '/../', widget.path.output, widget.name.replace('bootstrap', additionalParams.original)].join(''),
+				regexp: structure.config.shortcodes.widget.original,
 				filePath: path,
 				widgetName: additionalParams.name
 			});
@@ -51,7 +61,7 @@ BuilderWidgetGenerator.prototype.copyDefaultStructure = function(params) {
 
 BuilderWidgetGenerator.prototype.prepareFile = function(params) {
 	replace({
-		regex: structure.config.shortcodes.widget.name,
+		regex: params.regexp,
 		replacement: params.widgetName,
 		paths: [params.filePath],
 		recursive: true,
