@@ -1,6 +1,6 @@
 {
   "name": "builder-widget-generator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "HA Builder Widget Generator",
   "main": "index.js",
   "dependencies": {

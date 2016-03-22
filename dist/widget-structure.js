@@ -2,7 +2,7 @@ var WidgetStructure = function() {
     var path = {
         model: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/webpack/assets/javascripts/modules/content-builder/models/widgets/{WIDGET_NAME_CAMEL_CASE}/',
         helper: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/webpack/assets/javascripts/modules/content-builder/models/widgets/{WIDGET_NAME_CAMEL_CASE}/',
-        template: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/app/assets/templates/ha-dashboard/content-builder/{WIDGET_NAME}/'
+        template: '/Users/cloud/castle/rails/nearby/gems/ha-dashboard/app/assets/templates/ha-dashboard/content-builder/widgets/{WIDGET_NAME}/'
     };
 
     this.templates = {
